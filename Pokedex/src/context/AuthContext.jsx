@@ -1,65 +1,47 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import { loginRequest } from "../services/authService";
 
-const AuthContext = createContext(); //Cria uma "variavel global" que pode ser acessada sem passar de um componente para o outro
+export const AuthContext = createContext({});
 
+export function AuthProvider({ children }) {
+    const [user, setUser] = useState(null);
 
-export function AuthProvider({ children }) { //Permite o uso da função em outros lugares da aplicação
-    const [user, setUser] = useState(null); //Seta o usuario como nulo
-
-
-    useEffect(() => { //Sincroniza o componente com algo externo
-        const storedUser = localStorage.getItem("user"); // cria uma variavel para guardar usuario e atribui o valor do cache
+    // Quando a aplicação é carregada, verifica se já existe um utilizador guardado
+    useEffect(() => {
+        const storedUser = localStorage.getItem("user");
         if (storedUser) {
             setUser(JSON.parse(storedUser));
-        } //Verifica se existe valor, converte para js e atribui caso possivel
+        }
     }, []);
 
-
+    // Função de login que comunica com o backend real
     async function login(username, password) {
-
-    // MOCK LOGIN
-    if (username === "miau" && password === "miau") {
-
-        const fakeUser = { name: username };
-
-        setUser(fakeUser);
-        localStorage.setItem("user", JSON.stringify(fakeUser));
-
-        return true;
-    }
-
-    // BACKEND
-    /*
         try {
             const data = await loginRequest(username, password);
 
-            setUser(data.user);
-            localStorage.setItem("user", JSON.stringify(data.user));
+            // Nota: Se o seu Django devolver os dados diretamente na raiz de 'data' em vez de 'data.user', 
+            // basta alterar para 'const userData = data;'
+            const userData = data.user || { username: username }; 
+
+            setUser(userData);
+            localStorage.setItem("user", JSON.stringify(userData));
 
             return true;
         } catch (error) {
-            console.error(error);
+            console.error("Falha no login:", error);
             return false;
         }
     }
-    */
 
-    return false;
-}
-
-    function logout() { //Remove user do estado e do localstorage
+    // Função para terminar a sessão
+    function logout() {
         setUser(null);
         localStorage.removeItem("user");
     }
 
-    return ( //tudo que tiver aqui dentro vai ter acesso a login, logout e user
-        <AuthContext.Provider value={{ user, login, logout }}>
+    return (
+        <AuthContext.Provider value={{ user, login, logout, isAuthenticated: !!user }}>
             {children}
         </AuthContext.Provider>
     );
-}
-
-export function useAuth() {
-    return useContext(AuthContext);
 }
