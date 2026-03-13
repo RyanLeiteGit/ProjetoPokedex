@@ -1,0 +1,54 @@
+/* src/pages/Home.css */
+
+.home-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "pokemons filtros"
+    "visualizacao visualizacao";
+  
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: auto 1fr auto; 
+  
+  gap: 20px; 
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f5f5f5; 
+  box-sizing: border-box;
+}
+
+.header-area {
+  grid-area: header;
+  background-color: #ef5350; 
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pokemons-area {
+  grid-area: pokemons;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.filtros-area {
+  grid-area: filtros;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.visualizacao-area {
+  grid-area: visualizacao;
+  background-color: #333; 
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 200px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,87 @@
+/* src/components/UI/Button.module.css */
+
+/* --- Estilos Base para TODOS os botões --- */
+.btn {
+    padding: 10px 20px; /* Deixa o botão "gordinho" */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas modernas */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Transição suave para TODOS os efeitos */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    outline: none;
+    text-transform: uppercase; /* Dá um toque mais "jogo" */
+    letter-spacing: 0.5px;
+}
+
+/* --- Variantes de Cores --- */
+
+.primary {
+    background-color: #ef5350; /* Vermelho Pokémon */
+    color: white;
+}
+
+.primary:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro no hover */
+    box-shadow: 0 5px 12px rgba(239, 83, 80, 0.3);
+    transform: translateY(-1px); /* Sobe de leve no hover */
+}
+
+.primary:active {
+    background-color: #b71c1c; /* Vermelho ainda mais escuro no clique */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transform: translateY(1px); /* Desce de leve no clique (efeito "apertar") */
+}
+
+/* ⚪ Botão Secundário (ex: Limpar) */
+.secondary {
+    background-color: #f5f5f5; /* Cinza claro */
+    color: #333;
+    border: 2px solid #e0e0e0;
+}
+
+.secondary:hover {
+    background-color: #e0e0e0;
+    border-color: #d0d0d0;
+}
+
+.secondary:active {
+    background-color: #d5d5d5;
+    transform: translateY(1px);
+}
+
+/* 🚫 Botão para o Header (ex: Sair) */
+/* (Você pode criar uma variante específica se quiser mudar as cores ou tamanhos) */
+.header {
+    background-color: rgba(255,255,255,0.2); /* Branco transparente */
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.header:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.header:active {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(1px);
+}
+.danger {
+    background-color: #d32f2f; /* Vermelho mais forte */
+    color: white;
+    padding: 6px 12px; /* Um pouco menor que o botão normal */
+    font-size: 0.85rem;
+}
+
+.danger:hover {
+    background-color: #b71c1c; 
+    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.3);
+    transform: translateY(-1px);
+}
+
+.danger:active {
+    background-color: #9a0007;
+    transform: translateY(1px);
+}
