@@ -7,44 +7,43 @@
     background-color: white;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Sombra mais destacada */
-    position: absolute; /* Faz o menu flutuar sem empurrar os outros elementos */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+    position: absolute; 
     width: 100%;
-    max-height: 350px; /* Aumentamos o tamanho da caixa */
+    max-height: 350px; 
     overflow-y: auto;
-    z-index: 100; /* Garante que fique por cima de tudo */
+    z-index: 100; 
 }
 
 .dropdownItem {
     display: flex;
     align-items: center;
-    padding: 10px 20px; /* Mais "respiro" nas laterais e em cima/baixo */
-    cursor: pointer;
+    padding: 10px 20px;
     border-bottom: 1px solid #f0f0f0;
     transition: all 0.2s ease;
-    gap: 15px; /* Espaço maior entre a foto e o nome */
+    gap: 15px;
 }
 
 .dropdownItem:last-child {
     border-bottom: none;
 }
 
-/* O efeito mágico ao passar o mouse */
+
 .dropdownItem:hover {
     background-color: #f9f9f9;
-    border-left: 4px solid #ef5350; /* Barrinha vermelha na esquerda */
-    padding-left: 16px; /* Compensa os 4px da borda para o texto não pular */
+    border-left: 4px solid #ef5350; 
+    padding-left: 16px; 
 }
 
 .pokemonIcon {
-    width: 50px; /* Aumentamos bem o tamanho do mini-sprite! */
+    width: 50px; 
     height: 50px;
     object-fit: contain;
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
 }
 
 .pokemonName {
-    font-size: 1.15rem; /* Fonte maior e mais bonita */
+    font-size: 1.15rem; 
     color: #333;
     font-weight: 500;
 }

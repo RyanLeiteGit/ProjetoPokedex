@@ -6,7 +6,7 @@ from rest_framework import status
 from .serializers import UserSerializer, PokemonTeamSerializer
 from .models import PokemonTeam
 
-# Endpoint de Login (Compatível com seu authService.js)
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_view(request):
@@ -16,18 +16,18 @@ def login_view(request):
     user = authenticate(username=username, password=password)
 
     if user is not None:
-        # Serializa os dados do usuário para retornar
+        
         serializer = UserSerializer(user)
         return Response({
             "message": "Login realizado com sucesso",
-            "user": serializer.data  # O frontend espera acessar data.user
+            "user": serializer.data  
         }, status=status.HTTP_200_OK)
     else:
         return Response({"error": "Credenciais inválidas"}, status=status.HTTP_401_UNAUTHORIZED)
 
-# Endpoint Básico para o Time (CRUD)
+
 @api_view(['GET', 'POST'])
-@permission_classes([IsAuthenticated]) # Exige login (token/session)
+@permission_classes([IsAuthenticated]) 
 def team_view(request):
     user = request.user
 

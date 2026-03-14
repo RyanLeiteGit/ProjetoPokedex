@@ -5,6 +5,7 @@
 Docker --ultima Versão
 git -- ultima versão
 
+*lembre de ter instalado antes de começar a executar os comandos
 ## Replicando o conteúdo do codigo
 
 1 - Abra o Vs Code (Com a conta git configurada) 
@@ -26,7 +27,7 @@ git -- ultima versão
 ## Rodando o docker e aplicação 
 
 6 - No terminal digite os seguinte comandos:
-     -> docker compose up --build
+     -> docker compose up --build 
 
 ## Acessando a aplicação 
 

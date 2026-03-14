@@ -2,7 +2,7 @@
 
 /* --- O Fundo Inteiro da Tela --- */
 .login-page {
-    position: absolute; /* O PULO DO GATO: Ignora qualquer borda do React */
+    position: absolute; 
     top: 0;
     left: 0;
     height: 100vh;
@@ -11,8 +11,8 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    box-sizing: border-box; /* Impede que o padding quebre o tamanho da tela */
-    overflow: hidden; /* Remove qualquer barra de rolagem */
+    box-sizing: border-box; 
+    overflow: hidden; 
 
     /* Configurações do fundo */
     background-size: cover;
@@ -22,29 +22,29 @@
 
 /* --- A Carcaça da Pokédex --- */
 .pokedex-body {
-    background-color: #d32f2f; /* Vermelho Pokédex */
+    background-color: #d32f2f; 
     width: 100%;
-    max-width: 420px; /* Aumentamos um pouco para dar mais espaço global */
+    max-width: 420px; 
     border-radius: 20px;
-    border: 4px solid #8b0000; /* Borda escura para dar profundidade */
+    border: 4px solid #8b0000; 
     box-shadow: 10px 10px 25px rgba(0,0,0,0.6), inset -5px -5px 15px rgba(0,0,0,0.3); /* Sombra mais profunda */
-    padding: 30px; /* Aumentamos o padding geral da carcaça */
+    padding: 30px; 
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Mais espaço entre o topo e a tela */
+    gap: 30px; 
 }
 
 /* --- O Topo (Luzes) --- */
 .pokedex-top {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* Mais espaço entre as luzes */
+    gap: 20px; 
     border-bottom: 4px solid #8b0000;
     padding-bottom: 25px;
 }
 
 .big-blue-light {
-    width: 75px; /* Aumentamos o tamanho da lente */
+    width: 75px; 
     height: 75px;
     background-color: #2196f3;
     border-radius: 50%;
@@ -55,7 +55,7 @@
 
 /* Reflexo branco no vidro azul */
 .reflection {
-    width: 18px; /* Aumentamos o reflexo */
+    width: 18px; 
     height: 18px;
     background-color: rgba(255,255,255,0.8);
     border-radius: 50%;
@@ -66,7 +66,7 @@
 
 .small-lights {
     display: flex;
-    gap: 10px; /* Mais espaço entre as pequenas luzes */
+    gap: 10px; 
 }
 
 .led {
@@ -83,13 +83,13 @@
 
 /* --- A Tela do Formulário --- */
 .pokedex-screen {
-    background-color: #b0bec5; /* Cinza claro estilo Gameboy */
+    background-color: #b0bec5; 
     border: 4px solid #333;
-    border-radius: 15px 15px 50px 15px; /* Canto inferior direito cortado mais pronunciado */
-    padding: 40px 30px; /* Aumentamos o padding da tela consideravelmente */
+    border-radius: 15px 15px 50px 15px; 
+    padding: 40px 30px; 
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Mais espaço entre os elementos do formulário */
+    gap: 20px; 
     box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
 }
 
@@ -97,50 +97,50 @@
     text-align: center;
     margin: 0 0 15px 0;
     color: #333;
-    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
-    font-size: 1.8rem; /* Aumentamos o tamanho do título */
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.8rem; 
     font-weight: bold;
-    letter-spacing: 3px; /* Aumentamos o espaçamento entre letras */
+    letter-spacing: 3px; 
 }
 
 /* --- Estilizando seus Inputs/Botões para ficarem Retrô e Espaçosos --- */
 .poke-input {
-    border: 3px solid #333 !important; /* Borda grossa */
+    border: 3px solid #333 !important; 
     border-radius: 6px !important;
     background-color: #ffffff;
-    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
+    font-family: 'Courier New', Courier, monospace; 
     font-weight: bold;
-    font-size: 1.1rem; /* Fonte maior para melhor leitura */
-    padding: 15px 20px !important; /* Aumentamos o padding dos inputs */
+    font-size: 1.1rem; 
+    padding: 15px 20px !important; 
     width: 100%;
     box-sizing: border-box;
 }
 
 .poke-btn {
-    background-color: #333 !important; /* Botão escuro retrô */
+    background-color: #333 !important; 
     color: white !important;
     border: 3px solid #000 !important;
     border-radius: 8px !important;
-    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
+    font-family: 'Courier New', Courier, monospace; 
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.2rem; /* Fonte maior no botão */
-    letter-spacing: 3px; /* Aumentamos o espaçamento entre letras */
-    margin-top: 15px; /* Mais espaço acima do botão */
-    padding: 15px 25px !important; /* Aumentamos o padding do botão */
-    transition: all 0.3s ease; /* Transição suave */
+    font-size: 1.2rem; 
+    letter-spacing: 3px; 
+    margin-top: 15px; 
+    padding: 15px 25px !important; 
+    transition: all 0.3s ease; 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 .poke-btn:hover {
-    background-color: #555 !important; /* Cor mais clara no hover */
+    background-color: #555 !important; 
     border-color: #555 !important;
-    transform: scale(1.05); /* Pequeno aumento no hover */
+    transform: scale(1.05); 
     box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
 
 .poke-btn:active {
-    background-color: #1a1a1a !important; /* Cor mais escura no active */
-    transform: scale(0.98); /* Pequena redução no active (efeito "apertar") */
+    background-color: #1a1a1a !important; 
+    transform: scale(0.98); 
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }

@@ -29,7 +29,7 @@ export default function TeamList({ team, onSelectPokemon, onRemovePokemon }) {
                     
                     <Button 
                         variant="danger" 
-                        // 👇 Garantindo que a função é chamada passando o NOME ou o ID do pokemon
+                        
                         onClick={() => onRemovePokemon(pokemon.name)}
                     >
                         Remover

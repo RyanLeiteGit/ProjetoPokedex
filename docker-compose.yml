@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      # Aqui definimos o usuário e senha que serão criados automaticamente
+      
       - APP_USER=AlvoroVasco10
       - APP_PASSWORD=galomaiordeminas
 

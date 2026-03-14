@@ -26,10 +26,10 @@
     justify-content: center;
     gap: 8px;
     padding: 8px 20px;
-    border-radius: 4px; /* Borda menos arredondada que o badge comum */
+    border-radius: 4px; 
     color: white;
     font-size: 1rem;
-    min-width: 100px; /* Garante um tamanho mínimo parecido com o da imagem */
+    min-width: 100px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -45,14 +45,14 @@
     font-size: 14px;
     font-weight: bold;
     margin-left: 5px;
-    padding-top: 4px; /* Alinha o asterisco no meio do circulo */
+    padding-top: 4px;
 }
 
 /* Cores dos Tipos */
 .tipo-normal { background-color: #A8A77A; }
-.tipo-fire { background-color: #F08030; } /* Ajustado mais pro Laranja */
-.tipo-water { background-color: #6890F0; } /* Ajustado mais pro Azul claro */
-.tipo-electric { background-color: #F8D030; } /* Amarelo */
+.tipo-fire { background-color: #F08030; } 
+.tipo-water { background-color: #6890F0; } 
+.tipo-electric { background-color: #F8D030; } 
 .tipo-grass { background-color: #78C850; }
 .tipo-ice { background-color: #98D8D8; }
 .tipo-fighting { background-color: #C03028; }
@@ -61,7 +61,7 @@
 .tipo-flying { background-color: #A890F0; } 
 .tipo-psychic { background-color: #F85888; }
 .tipo-bug { background-color: #A8B820; }
-.tipo-rock { background-color: #B8A038; } /* Ajustado pro Marrom igual a foto */
+.tipo-rock { background-color: #B8A038; } 
 .tipo-ghost { background-color: #705898; }
 .tipo-dragon { background-color: #7038F8; }
 .tipo-dark { background-color: #705848; }
@@ -82,7 +82,7 @@
 }
 
 .nome-pokemon {
-    text-transform: none; /* Deixa o React cuidar da capitalização via JS */
+    text-transform: none; 
     margin: 0;
     font-size: 2.2rem;
     color: #333;
@@ -142,7 +142,7 @@
     justify-content: center;
     gap: 8px;
     padding: 10px 25px;
-    border-radius: 4px; /* Borda menos arredondada que o badge comum */
+    border-radius: 4px; 
     color: white;
     font-size: 1.1rem;
     min-width: 120px;
@@ -161,14 +161,14 @@
     font-size: 16px;
     font-weight: bold;
     margin-left: 5px;
-    padding-top: 5px; /* Alinha o asterisco */
+    padding-top: 5px; 
 }
 
 /* Cores Oficiais Oficiais Ajustadas */
 .tipo-normal { background-color: #A8A77A; }
-.tipo-fire { background-color: #F08030; } /* Ajustado mais pro Laranja */
-.tipo-water { background-color: #6890F0; } /* Ajustado mais pro Azul claro */
-.tipo-electric { background-color: #F8D030; } /* Amarelo */
+.tipo-fire { background-color: #F08030; } 
+.tipo-water { background-color: #6890F0; } 
+.tipo-electric { background-color: #F8D030; } 
 .tipo-grass { background-color: #78C850; }
 .tipo-ice { background-color: #98D8D8; }
 .tipo-fighting { background-color: #C03028; }
@@ -177,7 +177,7 @@
 .tipo-flying { background-color: #A890F0; } 
 .tipo-psychic { background-color: #F85888; }
 .tipo-bug { background-color: #A8B820; }
-.tipo-rock { background-color: #B8A038; } /* Marrom igual a foto */
+.tipo-rock { background-color: #B8A038; } 
 .tipo-ghost { background-color: #705898; }
 .tipo-dragon { background-color: #7038F8; }
 .tipo-dark { background-color: #705848; }
@@ -202,7 +202,7 @@
 }
 
 .status-nome {
-    width: 140px; /* Largura fixa para os rótulos capitalized */
+    width: 140px;
     font-size: 1rem;
     font-weight: bold;
     color: #555;
@@ -215,7 +215,7 @@
     font-weight: bold;
 }
 
-/* O fundo da barra */
+
 .barra-fundo {
     flex: 1;
     height: 14px;
@@ -224,9 +224,9 @@
     overflow: hidden;
 }
 
-/* O preenchimento colorido */
+
 .barra-preenchimento {
     height: 100%;
     border-radius: 7px;
-    transition: width 0.5s ease-in-out; /* Efeito suave de carregamento */
+    transition: width 0.5s ease-in-out;
 }
