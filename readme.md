@@ -21,12 +21,15 @@ Docker --ultima Versão
 ## Replicando o conteúdo do codigo
 
 1 - Abra o Vs Code 
+
 2 - Abra o aplicativo docker (Necessário entrar com uma conta)
+
 3 - Abra a pasta baixada no computador pelo vs code
     * Arquivo -> Abrir Pasta -> Selecione a pasta baixada do projeto
 
 ## Rodando o docker e aplicação 
 4 - abra o terminal pelo comando : ctrl + shit + '
+
 5 - No terminal digite os seguinte comandos:
      ->cd projeto_sd (caso ainda não esteja no diretorio /projeto_sd/)
      -> docker compose up --build 
