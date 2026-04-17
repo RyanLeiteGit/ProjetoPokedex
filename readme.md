@@ -1,42 +1,44 @@
+Alunos:
+
+Thales Murillo Siqueira Teodoro- 2320908
+Jullio Cesar Godoi Dutra - 2310206
+Allan Silveira de Lima - 2311427 - 07353834137
+Ryan Gustavo Leite Teodoro - 2311671
+
+## Tecnologias utilizadas
+
+- Django + rest_framework
+- React + vite 
+- Docker 
+
 # Sistema de montagem de time pokemon
 
 ## Aplicativos necessários (Baixar caso não estiver instalado)
 
 Docker --ultima Versão
-git -- ultima versão
 
 *lembre de ter instalado antes de começar a executar os comandos
 ## Replicando o conteúdo do codigo
 
-1 - Abra o Vs Code (Com a conta git configurada) 
+1 - Abra o Vs Code 
 2 - Abra o aplicativo docker (Necessário entrar com uma conta)
-3 - Abra uma pasta no computador pelo vs code
-    * Arquivo -> Abrir Pasta -> Selecione ou crie uma pasta para locar o projeto
-    *File -> Open Folder -> Select or create a folder to locate the project
-4 - abra o terminal do vs code com o comando : "ctrl + shit + ' "
-5 - digite : "git clone https://github.com/JullioDutra/Projeto_SD.git"
-
-    *Caso prefira baixar o arquivo .zip entre pelo link: https://github.com/JullioDutra/Projeto_SD.git (Fazer apenas se não for utilizar o git clone)
-        Baixar o aquivo em:
-        code -> Download zip
-        salvar dentro da pasta aberta para o projeto
-        dezipar o arquivo
-        no terminal:
-            cd projeto_sd
+3 - Abra a pasta baixada no computador pelo vs code
+    * Arquivo -> Abrir Pasta -> Selecione a pasta baixada do projeto
 
 ## Rodando o docker e aplicação 
-
-6 - No terminal digite os seguinte comandos:
+4 - abra o terminal pelo comando : ctrl + shit + '
+5 - No terminal digite os seguinte comandos:
+     ->cd projeto_sd (caso ainda não esteja no diretorio /projeto_sd/)
      -> docker compose up --build 
 
 ## Acessando a aplicação 
 
-7 - No navegador(Chrome, Edge, Opera...) acesse o seguinte link:
+6 - No navegador(Chrome, Edge, Opera...) acesse o seguinte link:
     -> http://localhost:5173/
 
-8 - Acessando seu usuário:
+7 - Acessando seu usuário:
     * Adicione os dados:
     usuário: AlvoroVasco10
     senha: galomaiordeminas
 
-9 - Teste a aplicação e seja feliz 😁
+8 - Teste a aplicação e seja feliz 😁
